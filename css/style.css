@@ -11,15 +11,15 @@
    ------------------------------------------------------------ */
 :root {
   /* 色 */
-  --c-ink:        #1b2438;  /* 深い藍(メインテキスト・濃色背景) */
-  --c-ink-soft:   #46506a;  /* 藍のソフトトーン(補助テキスト) */
-  --c-indigo:     #2c4470;  /* アクセントの藍 */
-  --c-gold:       #b08d3f;  /* 金(高級感・CTA) */
-  --c-gold-soft:  #cbb27a;  /* 金の淡色 */
-  --c-bg:         #fbfaf7;  /* 温かみのある白(ベース背景) */
-  --c-bg-tint:    #f2f0ea;  /* セクション交互用の淡い背景 */
+  --c-ink:        #1e40af;  /* 明るいブルー(メインテキスト・濃色背景) */
+  --c-ink-soft:   #3b82f6;  /* ブルーのソフトトーン(補助テキスト) */
+  --c-indigo:     #3b82f6;  /* アクセントのブルー */
+  --c-gold:       #f97316;  /* オレンジ(高級感・CTA) */
+  --c-gold-soft:  #fbbf24;  /* オレンジの淡色 */
+  --c-bg:         #f8fafb;  /* 明るい白(ベース背景) */
+  --c-bg-tint:    #f0f4f8;  /* セクション交互用の淡い背景 */
   --c-white:      #ffffff;
-  --c-line:       #e4e0d6;  /* 罫線 */
+  --c-line:       #dbeafe;  /* 罫線 */
 
   /* 書体 */
   --font-display: "Shippori Mincho", "Hiragino Mincho ProN", serif;
@@ -653,15 +653,17 @@ thead .compare__ours { background: var(--c-indigo) !important; color: #fff !impo
    18. フッター / 追従CTA
    ------------------------------------------------------------ */
 .site-footer {
-  background: #141b2c;
-  color: #9aa2b5;
+  background: #1e3a8a;
+  color: #93c5fd;
   text-align: center;
   padding: 44px 0 120px;   /* 下部は追従CTAぶんの余白 */
   font-size: 12.5px;
 }
-.site-footer__logo { font-family: var(--font-display); color: #d5dae5; font-size: 14px; margin-bottom: 16px; }
+.site-footer__logo { font-family: var(--font-display); color: #bfdbfe; font-size: 14px; margin-bottom: 16px; }
 .site-footer__nav { display: flex; justify-content: center; gap: 22px; margin-bottom: 18px; }
 .site-footer__nav a:hover { color: #fff; }
+.site-footer__link { color: var(--c-gold); font-weight: 700; transition: opacity 0.25s ease; }
+.site-footer__link:hover { opacity: 0.8; text-decoration: underline; }
 
 /* モバイル用 追従CTA(スクロール後に表示) */
 .floating-cta {
